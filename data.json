@@ -1,299 +1,378 @@
 {
   "siteTitle": "Wonder Woman Reading Order & Collection Tracker",
-  "subtitle": "Complete Chronological Guide, Story Arcs, Creators & Collected Editions (1941–2026)",
-  "items": [
+  "subtitle": "Complete Chronological Reading Order, Story Arcs, Creators & Collected Editions (1941–2026)",
+  "editions": {
+    "ww-ga-omni": {
+      "title": "Wonder Woman: The Golden Age Omnibus Vols. 1–6 (All Star #8, Comic Cavalcade #1–29, Sensation #1–106, WW #1–54 or #1–71)",
+      "format": "Omnibus HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Golden+Age+Omnibus+Vol.+1",
+      "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman:_The_Golden_Age_Omnibus_Vol._1"
+    },
+    "ww-ga-dcf": {
+      "title": "DC Finest: Wonder Woman – Introducing Wonder Woman (2025) & Enter the Cheetah (2026); Archives Vols. 1–7; Chronicles Vols. 1–3",
+      "format": "DC Finest / Archive HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=DC+Finest+Introducing+Wonder+Woman",
+      "dc_wiki": ""
+    },
+    "ww-ga-uncollected": {
+      "title": "Uncollected Late Golden Age Gap (WW Vol. 1 #55–97 or #72–97)",
+      "format": "Uncollected",
+      "owned": false,
+      "uncollected": true,
+      "locg_url": "",
+      "dc_wiki": ""
+    },
+    "ww-sa-omni": {
+      "title": "Wonder Woman: The Silver Age Omnibus Vols. 1–3 (Vol. 3 released 2026, #98–177) & Showcase Presents Vols. 1–4",
+      "format": "Omnibus HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Silver+Age+Omnibus+Vol.+1",
+      "dc_wiki": ""
+    },
+    "ww-diana-prince-tpb": {
+      "title": "Diana Prince: Wonder Woman Vols. 1–4 (#178–204 + tie-ins) & Celebrating the '60s Omnibus (omits #197–198)",
+      "format": "TPB / Omnibus HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Diana+Prince+Wonder+Woman+Vol.+1",
+      "dc_wiki": ""
+    },
+    "ww-ba-omni-1": {
+      "title": "Wonder Woman: The Bronze Age Omnibus Vol. 1 (#204–227 + tie-ins) & The Twelve Labors (#212–222)",
+      "format": "Omnibus HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Bronze+Age+Omnibus+Vol.+1",
+      "dc_wiki": ""
+    },
+    "ww-ba-uncollected": {
+      "title": "Uncollected Mid-Bronze Age Gap (WW Vol. 1 #228–279 outside Huntress backups #271–295)",
+      "format": "Uncollected",
+      "owned": false,
+      "uncollected": true,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Huntress+Darknight+Daughter",
+      "dc_wiki": ""
+    },
+    "ww-dcf-late-ba": {
+      "title": "DC Finest: The Legend of Wonder Woman (2025, #306–329 + tie-ins), Judgment in Infinity! (2027) & The Joker: The Last Ha Ha (#280–283)",
+      "format": "DC Finest TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=DC+Finest+The+Legend+of+Wonder+Woman",
+      "dc_wiki": ""
+    },
+    "ww-perez-omni": {
+      "title": "Wonder Woman by George Pérez Omnibus Vols. 1–3 (Vol. 2 2026 ed., Vol. 3 2027 ed.), TPBs Vols. 1–6 & War of the Gods Omnibus",
+      "format": "Omnibus HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+George+Perez+Omnibus+Vol.+1",
+      "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_by_George_P%C3%A9rez_Omnibus_Vol._1"
+    },
+    "ww-loebs-tpbs": {
+      "title": "Book 1: The Last True Hero; Book 2: Ares Rising; The Contest; WW by Mike Deodato; WW & JLA Vols. 1–2",
+      "format": "TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Last+True+Hero",
+      "dc_wiki": ""
+    },
+    "ww-byrne-vols": {
+      "title": "Wonder Woman by John Byrne Vols. 1–3 (#101–136, Annuals #5–6) & Batman by Brian K. Vaughan (#160–161)",
+      "format": "HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+John+Byrne+Vol.+1",
+      "dc_wiki": ""
+    },
+    "ww-90s-uncollected": {
+      "title": "Uncollected Late-'90s Gap (WW Vol. 2 #137–159 & #162–163 by Priest, Luke & Raab)",
+      "format": "Uncollected",
+      "owned": false,
+      "uncollected": true,
+      "locg_url": "",
+      "dc_wiki": ""
+    },
+    "ww-jimenez-omni": {
+      "title": "Wonder Woman by Phil Jimenez Omnibus (2025 ed., #164–188), Paradise Lost/Found & WW by Walt Simonson and Jerry Ordway (#189–194)",
+      "format": "Omnibus HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Phil+Jimenez+Omnibus",
+      "dc_wiki": ""
+    },
+    "ww-rucka-v2": {
+      "title": "Wonder Woman by Greg Rucka Vols. 1–3 (The Hiketeia & WW Vol. 2 #195–226 + Flash #219) & Infinite Crisis TPB/Omnibus",
+      "format": "TPB / Omnibus HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Greg+Rucka+Vol.+1",
+      "dc_wiki": ""
+    },
+    "ww-v3-launch": {
+      "title": "52 Aftermath: The Four Horsemen; Who Is Wonder Woman?; Love and Murder; Amazons Attack!",
+      "format": "TPB / HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Who+Is+Wonder+Woman",
+      "dc_wiki": ""
+    },
+    "ww-simone-omni": {
+      "title": "Wonder Woman by Gail Simone Omnibus, TPBs (The Circle–Contagion), DC Finest: Origins & Omens (2024) & Dawn Before Darkness (2026)",
+      "format": "Omnibus HC / DC Finest",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Gail+Simone+Omnibus",
+      "dc_wiki": ""
+    },
+    "ww-odyssey-fp": {
+      "title": "Wonder Woman: Odyssey Vols. 1–2 (#600–614), Flashpoint TPB & World of Flashpoint Featuring Wonder Woman",
+      "format": "HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Odyssey+Vol.+1",
+      "dc_wiki": ""
+    },
+    "ww-azzarello-omni": {
+      "title": "Wonder Woman by Brian Azzarello & Cliff Chiang Omnibus, Absolute Vols. 1–2, Blood & Guts Deluxe/Compact & Vols. 1–6",
+      "format": "Omnibus / Absolute HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Brian+Azzarello+Omnibus",
+      "dc_wiki": ""
+    },
+    "ww-finch-tpbs": {
+      "title": "Vol. 7: War-Torn; Vol. 8: A Twist of Faith; Vol. 9: Resurrection",
+      "format": "HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Vol.+7+War-Torn",
+      "dc_wiki": ""
+    },
+    "ww-n52-parallel": {
+      "title": "Superman/Wonder Woman Vols. 1–5 & Sensation Comics featuring Wonder Woman Vols. 1–3",
+      "format": "HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Superman+Wonder+Woman+Vol.+1",
+      "dc_wiki": ""
+    },
+    "ww-rucka-rebirth": {
+      "title": "Wonder Woman: Rebirth by Greg Rucka Omnibus (2026), Rebirth Deluxe Books 1–2, Vols. 1–4 TPBs & Trinity Vols. 1–2",
+      "format": "Omnibus HC / Deluxe",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Rebirth+by+Greg+Rucka+Omnibus",
+      "dc_wiki": ""
+    },
+    "ww-children-omni": {
+      "title": "Wonder Woman: Children of the Gods Omnibus (2027, #26–57 + tie-ins), Vols. 5–8 TPBs, Rebirth Deluxe Book 3 & Dark Nights: Metal",
+      "format": "Omnibus HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Children+of+the+Gods+Omnibus",
+      "dc_wiki": ""
+    },
+    "ww-wilson-tamaki": {
+      "title": "The Enemy of Both Sides; The Witching Hour; The Just War; Love Is a Battlefield; Loveless; The Four Horsewomen; Lords & Liars",
+      "format": "TPB / HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Just+War",
+      "dc_wiki": ""
+    },
+    "ww-if-tpbs": {
+      "title": "Afterworlds; Through a Glass Darkly; Tales of the Amazons; Trial of the Amazons; Villainy of Our Fears; Revenge of the Gods",
+      "format": "TPB / HC",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Afterworlds",
+      "dc_wiki": ""
+    },
+    "ww-king-tpbs": {
+      "title": "Vol. 1: Outlaw; Vol. 2: Sacrifice; Vol. 3: Fury; Vol. 4: Island of Mice and Men; Vol. 5: Wonder War Act I [Nov 2026]; Vol. 6 [June 2027]; Trinity (2026)",
+      "format": "HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Vol.+1+Outlaw",
+      "dc_wiki": ""
+    },
+    "ww-absolute-tpbs": {
+      "title": "Absolute Wonder Woman Vol. 1: The Last Amazon (#1–7); Vol. 2: As My Mothers Made Me (#8–14); Vol. 3: Season of the Witch (#15–20, 2026 Annual #1; Oct 2026)",
+      "format": "HC / TPB",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Absolute+Wonder+Woman+Vol.+1+The+Last+Amazon",
+      "dc_wiki": ""
+    },
+    "ww-elseworlds-editions": {
+      "title": "Earth One Vols. 1–3; Historia HC; Dead Earth HC; Black and Gold; Future State; YA OGNs; WW/Conan & Batman/WW",
+      "format": "HC / TPB / OGN",
+      "owned": false,
+      "uncollected": false,
+      "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Historia+The+Amazons",
+      "dc_wiki": ""
+    }
+  },
+  "issues": [
     {
-      "id": "pc-01",
+      "id": "ww-pc-01",
       "era": "Pre-Crisis Continuity: Golden, Silver, and Bronze Ages (1941–1986)",
-      "order": "1 (Golden Age)",
-      "title": "All Star Comics #8, #11–57; Sensation Comics #1–106; Comic Cavalcade #1–29; Wonder Woman Vol. 1 #1–97; Action Comics #142; Newspaper strips (1944–1945)",
+      "order": "1",
+      "issue": "All Star Comics #8, #11–57; Sensation Comics #1–106; Comic Cavalcade #1–29; Wonder Woman Vol. 1 #1–97; Action Comics #142; Newspaper strips (1944–1945)",
+      "storyTitle": "Origin Story; WWII Battles; JSA Secretary; Debuts of Ares (#1), Dr. Psycho (#5), Cheetah (#6), Giganta & Queen Clea (#9), Villainy Inc. & Circe (#49)",
+      "arc": "Golden Age (Earth-Two, 1941–1958)",
       "authors": ["William Moulton Marston (#1–11, 21–30)", "Joye Hummel (#12–20)", "Robert Kanigher (#30–97)", "Harry G. Peter (art)"],
-      "characters": ["Wonder Woman (Diana)", "Steve Trevor", "Etta Candy", "Ares", "Doctor Psycho", "Cheetah", "Giganta", "Queen Clea", "Circe"],
-      "arcs": "Origin story; WWII battles; JSA Secretary; debuts of Ares, Dr. Psycho, Cheetah, Giganta, Queen Clea, Villainy Inc., Circe",
+      "characters": ["Wonder Woman (Diana)", "Steve Trevor", "Ares", "Doctor Psycho", "Cheetah", "Giganta", "Queen Clea", "Circe"],
       "read": false,
-      "notes": "WW #55–97 or #72–97 remain uncollected in omnibus/DC Finest depending on Vol. 6 mapping",
+      "notes": "WW #55–97 or #72–97 uncollected in omnibus/DC Finest depending on Golden Age Omnibus Vol. 6 mapping",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_8",
         "gcd": "https://www.comics.org/issue/1874/",
-        "dcui": "https://www.dcuniverseinfinite.com/comics/series/wonder-woman-1942-1986/53714d3d-3874-450b-8c78-731e75c9c431"
+        "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman: The Golden Age Omnibus Vols. 1–6 (WW #1–54 or #1–71 + Sensation/Comic Cavalcade)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Golden+Age+Omnibus+Vol.+1"
-        },
-        {
-          "title": "DC Finest: Wonder Woman – Introducing Wonder Woman (2025) & Enter the Cheetah (2026)",
-          "format": "DC Finest TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=DC+Finest+Introducing+Wonder+Woman"
-        },
-        {
-          "title": "Wonder Woman Archives Vols. 1–7 / Golden Age TPBs Vols. 1–3 / Chronicles Vols. 1–3",
-          "format": "Archive HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Archives+Vol.+1"
-        },
-        {
-          "title": "Wonder Woman Vol. 1 #55–97 (or #72–97) Uncollected Gap",
-          "format": "Uncollected",
-          "owned": false,
-          "uncollected": true,
-          "locg_url": ""
-        }
-      ]
+      "editionIds": ["ww-ga-omni", "ww-ga-dcf", "ww-ga-uncollected"]
     },
     {
-      "id": "pc-02",
+      "id": "ww-pc-02",
       "era": "Pre-Crisis Continuity: Golden, Silver, and Bronze Ages (1941–1986)",
-      "order": "2 (Silver Age)",
-      "title": "Wonder Woman Vol. 1 #98–177; Justice League of America #1–63 (Silver Age team-ups)",
+      "order": "2",
+      "issue": "Wonder Woman Vol. 1 #98–177; Justice League of America #1–63 (Silver Age team-ups; JLA continues to #261 + Annuals #1–3)",
+      "storyTitle": "Revamped Divine Origin (#105); Wonder Girl Tales; Angle Man; JSA/JLA Crossovers",
+      "arc": "Silver Age (Earth-One, 1958–1968)",
       "authors": ["Robert Kanigher (#98–176)", "Bill Finger (#177)"],
       "characters": ["Wonder Woman (Diana)", "Wonder Girl", "Angle Man", "Justice League"],
-      "arcs": "Revamped divine origin (#105); Wonder Girl tales; Angle Man; JSA/JLA multiverse crossovers",
       "read": false,
-      "notes": "JLA run continues into Bronze Age up to #261 + Annuals #1–3",
+      "notes": "Dropped WWII references for Earth-One continuity",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_1_98",
         "gcd": "https://www.comics.org/series/290/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman: The Silver Age Omnibus Vols. 1–3 (Vol. 3 released 2026, #98–177)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Silver+Age+Omnibus+Vol.+1"
-        },
-        {
-          "title": "Showcase Presents: Wonder Woman Vols. 1–4 (#98–177) & Amazon Princess Archives Vol. 1 (#98–110)",
-          "format": "TPB / Archive HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Showcase+Presents+Wonder+Woman"
-        }
-      ]
+      "editionIds": ["ww-sa-omni"]
     },
     {
-      "id": "pc-03",
+      "id": "ww-pc-03",
       "era": "Pre-Crisis Continuity: Golden, Silver, and Bronze Ages (1941–1986)",
-      "order": "3 (Diana Prince Era)",
-      "title": "Wonder Woman Vol. 1 #178–204; Superman's Girl Friend, Lois Lane #93; The Brave and the Bold #87, #105; World's Finest #204; Adventure Comics #397",
+      "order": "3",
+      "issue": "Wonder Woman Vol. 1 #178–204; Superman's Girl Friend, Lois Lane #93; The Brave and the Bold #87, #105; World's Finest #204; Adventure Comics #397",
+      "storyTitle": "Surrender of Powers; Mod Boutique & I Ching Martial Arts Espionage; Death of Steve Trevor; Restoration of Powers (#204)",
+      "arc": "Depowered / Diana Prince Era (1968–1973)",
       "authors": ["Denny O'Neil", "Mike Sekowsky", "Samuel R. Delany", "Robert Kanigher"],
       "characters": ["Diana Prince", "I Ching", "Steve Trevor"],
-      "arcs": "Surrender of powers; mod boutique & I Ching martial arts espionage; death of Steve Trevor; restoration of powers (#204)",
       "read": false,
-      "notes": "Celebrating the '60s Omnibus omits #197–198; 4-volume TPB set is complete",
+      "notes": "Celebrating the '60s Omnibus omits #197–198",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_1_178",
         "gcd": "https://www.comics.org/issue/22164/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Diana Prince: Wonder Woman Vols. 1–4 (#178–204 + tie-ins)",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Diana+Prince+Wonder+Woman+Vol.+1"
-        },
-        {
-          "title": "Wonder Woman: Diana Prince – Celebrating the '60s Omnibus (omits #197–198)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Diana+Prince+Celebrating+the+60s+Omnibus"
-        }
-      ]
+      "editionIds": ["ww-diana-prince-tpb"]
     },
     {
-      "id": "pc-04",
+      "id": "ww-pc-04",
       "era": "Pre-Crisis Continuity: Golden, Silver, and Bronze Ages (1941–1986)",
-      "order": "4 (Early-Mid Bronze Age)",
-      "title": "Wonder Woman Vol. 1 #205–279; Super Friends #1–47; JLA #128–129, #143, #146; Freedom Fighters #4–5; Brave and the Bold #131, #140; All-Star Squadron #1–4, #13–60",
-      "authors": ["Robert Kanigher", "Len Wein", "Cary Bates", "Elliot S. Maggin", "Martin Pasko", "Gerry Conway", "Paul Levitz"],
+      "order": "4",
+      "issue": "Wonder Woman Vol. 1 #205–279; Super Friends #1–47; JLA #128–129, #143, #146; Freedom Fighters #4–5; Brave and the Bold #131, #140; All-Star Squadron #1–4, #13–60, Annuals #1–3",
+      "storyTitle": "Return of Nubia; The Twelve Labors (#212–222); 1943 Earth-Two TV Era (#228–243); Huntress Backups (#271+); All-Star Squadron WWII Retcons",
+      "arc": "Early-to-Mid Bronze Age (1973–1981)",
+      "authors": ["Robert Kanigher", "Len Wein", "Cary Bates", "Elliot S. Maggin", "Martin Pasko", "Gerry Conway", "Jack C. Harris", "Paul Levitz"],
       "characters": ["Wonder Woman (Diana)", "Nubia", "Huntress (Helena Wayne)", "Justice Society of America"],
-      "arcs": "Return of Nubia; The Twelve Labors (#212–222); 1943 Earth-Two TV era (#228–243); Huntress backups (#271+); All-Star Squadron WWII retcons",
       "read": false,
-      "notes": "Issues #228–279 remain uncollected outside Huntress backup features",
+      "notes": "#228–279 uncollected outside Huntress backups",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_1_212",
         "gcd": "https://www.comics.org/series/290/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman: The Bronze Age Omnibus Vol. 1 (#204–227 + tie-ins)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Bronze+Age+Omnibus+Vol.+1"
-        },
-        {
-          "title": "Wonder Woman: The Twelve Labors (#212–222) & Huntress: Origins / Darknight Daughter (#271–295 backups)",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Twelve+Labors"
-        },
-        {
-          "title": "Wonder Woman Vol. 1 #228–279 Main Stories (Uncollected Gap)",
-          "format": "Uncollected",
-          "owned": false,
-          "uncollected": true,
-          "locg_url": ""
-        }
-      ]
+      "editionIds": ["ww-ba-omni-1", "ww-ba-uncollected"]
     },
     {
-      "id": "pc-05",
+      "id": "ww-pc-05",
       "era": "Pre-Crisis Continuity: Golden, Silver, and Bronze Ages (1941–1986)",
-      "order": "5 (Late Bronze Age & Crisis)",
-      "title": "Wonder Woman Vol. 1 #280–329; New Teen Titans #11–12; DC Comics Presents #41, #76; Blue Devil #10; JLA #244–245; Crisis on Infinite Earths #1–12; The Legend of Wonder Woman #1–4 (1986)",
+      "order": "5",
+      "issue": "Wonder Woman Vol. 1 #280–329; New Teen Titans #11–12; DC Comics Presents #41, #76; Blue Devil #10; JLA #244–245; Crisis on Infinite Earths #1–12; The Legend of Wonder Woman #1–4 (1986)",
+      "storyTitle": "Judgment in Infinity! (#280/286–305); Milton Glaser 'WW' Emblem Debut (#288); Crisis on Infinite Earths; Marriage to Steve Trevor (#329)",
+      "arc": "Late Bronze Age & Crisis (1981–1986)",
       "authors": ["Gerry Conway", "Roy Thomas", "Dann Thomas", "Dan Mishkin", "Kurt Busiek", "Mindy Newell", "Marv Wolfman"],
       "characters": ["Wonder Woman (Diana)", "Steve Trevor", "Huntress (Helena Wayne)"],
-      "arcs": "Judgment in Infinity! (#280/286–305); Milton Glaser 'WW' emblem debut (#288); Crisis on Infinite Earths; marriage to Steve Trevor (#329)",
       "read": false,
-      "notes": "Dann Thomas became the first woman credited as scriptwriter on the series in #300",
+      "notes": "Dann Thomas became first woman credited as scriptwriter on the series in #300",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_1_329",
         "gcd": "https://www.comics.org/issue/41078/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "DC Finest: Wonder Woman – The Legend of Wonder Woman (2025, #306–329 + tie-ins)",
-          "format": "DC Finest TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=DC+Finest+The+Legend+of+Wonder+Woman"
-        },
-        {
-          "title": "DC Finest: Wonder Woman – Judgment in Infinity! (2027, #280/286–305 + tie-ins) & The Joker: The Last Ha Ha (#280–283)",
-          "format": "DC Finest TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=DC+Finest+Judgment+in+Infinity"
-        }
-      ]
+      "editionIds": ["ww-dcf-late-ba"]
     },
     {
-      "id": "pcr-01",
+      "id": "ww-pcr-01",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "1 (George Pérez Era)",
-      "title": "Wonder Woman Vol. 2 #1–62, Annuals #1–2; Who's Who #3–4, 7–8, 13, 16; Millennium #1, #3–4; War of the Gods #1–4 + multi-title tie-ins",
+      "order": "1",
+      "issue": "Wonder Woman Vol. 2 #1–62, Annuals #1–2; Who's Who #3–4, 7–8, 13, 16; Millennium #1, #3–4; War of the Gods #1–4 + multi-title tie-ins",
+      "storyTitle": "Gods and Mortals (#1–7); Challenge of the Gods (#11–14); War of the Gods (#58–62, event #1–4)",
+      "arc": "George Pérez Era (1987–1992)",
       "authors": ["George Pérez", "Greg Potter (#1–2)", "Len Wein (#3–16)", "Mindy Newell (#36–46)"],
-      "characters": ["Wonder Woman (Diana)", "Hippolyta", "Steve Trevor", "Etta Candy", "Julia Kapatelis", "Vanessa Kapatelis", "Cheetah (Barbara Minerva)", "Ares", "Circe"],
-      "arcs": "Gods and Mortals (#1–7); Challenge of the Gods (#11–14); War of the Gods (#58–62, event #1–4)",
+      "characters": ["Wonder Woman (Diana)", "Hippolyta", "Steve Trevor", "Cheetah (Barbara Minerva)", "Ares", "Circe"],
       "read": false,
-      "notes": "Major reboot entry point; War of the Gods ties into Superman, Batman, JLE, Suicide Squad, and New Titans",
+      "notes": "Major Post-Crisis mythological reboot entry point",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_2_1",
         "gcd": "https://www.comics.org/series/3367/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman by George Pérez Omnibus Vols. 1–3 (Vol. 2 2026 ed., Vol. 3 2027 ed.)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+George+Perez+Omnibus+Vol.+1"
-        },
-        {
-          "title": "Wonder Woman by George Pérez TPBs Vols. 1–6 & War of the Gods TPB / Omnibus",
-          "format": "TPB / Omnibus",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+George+Perez+Vol.+1"
-        }
-      ]
+      "editionIds": ["ww-perez-omni"]
     },
     {
-      "id": "pcr-02",
+      "id": "ww-pcr-02",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "2 (Messner-Loebs & Deodato)",
-      "title": "WW Vol. 2 #0, #63–100, Annual #3, Special #1; JLA #71–93; JLI #65–67; JLTF #13–15; Zero Hour #3; Bloodbath #1–2; Eclipso #15–16, #18",
+      "order": "2",
+      "issue": "WW Vol. 2 #0, #63–100, Annual #3, Special #1; JLA #71–93; JLI #65–67; JLTF #13–15; Zero Hour #3; Bloodbath #1–2; Eclipso #15–16, #18",
+      "storyTitle": "The Last True Hero; Ares Rising; The Contest (#0, #90–93, where Artemis wins the Wonder Woman title)",
+      "arc": "Messner-Loebs & Deodato (1992–1995)",
       "authors": ["William Messner-Loebs", "Joey Cavalieri (#65)", "Christopher Priest (#88–89)", "Mike Deodato (art)"],
       "characters": ["Wonder Woman (Diana)", "Artemis", "Hippolyta", "Justice League"],
-      "arcs": "The Last True Hero; Ares Rising; The Contest (#0, #90–93, where Artemis wins the Wonder Woman title)",
       "read": false,
-      "notes": "Issues #65 and #76 are omitted from The Last True Hero and Ares Rising TPBs",
+      "notes": "#65 and #76 omitted from Last True Hero and Ares Rising collections",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_2_90",
         "gcd": "https://www.comics.org/series/3367/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Book 1: The Last True Hero (#63–64, 66–75, Annual #3, Special #1) & Book 2: Ares Rising (#77–89)",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Last+True+Hero"
-        },
-        {
-          "title": "Wonder Woman: The Contest (#0, 90–93); WW by Mike Deodato; WW & JLA Vols. 1–2",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Contest"
-        }
-      ]
+      "editionIds": ["ww-loebs-tpbs"]
     },
     {
-      "id": "pcr-03",
+      "id": "ww-pcr-03",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "3 (John Byrne & Late-'90s Transition)",
-      "title": "WW Vol. 2 #101–163, Annuals #5–8, #1,000,000; Artemis: Requiem #1–6; Genesis; JLA #1–9; Adventure Comics 80-Page Giant #1",
+      "order": "3",
+      "issue": "WW Vol. 2 #101–163, Annuals #5–8, #1,000,000; Artemis: Requiem #1–6; Genesis; JLA #1–9; Adventure Comics 80-Page Giant #1",
+      "storyTitle": "Byrne's Post-Death of Superman & Wonder Girl Arcs; Genesis Tie-Ins; Transitional Runs (#137–163)",
+      "arc": "John Byrne & Late-'90s Transition (1995–2000)",
       "authors": ["John Byrne (#101–136)", "Christopher Priest (#137–138, 1M)", "Eric Luke (#139–159)", "Brian K. Vaughan (#160–161)", "Ben Raab (#162–163)"],
       "characters": ["Wonder Woman (Diana)", "Hippolyta", "Donna Troy", "Cassie Sandsmark (Wonder Girl)", "Artemis"],
-      "arcs": "Byrne's Post-Death of Superman & Wonder Girl arcs; Genesis tie-ins; Hippolyta as WWII Wonder Woman",
       "read": false,
-      "notes": "Issues #137–159 and #162–163 remain uncollected; #160–161 collected in Batman by Brian K. Vaughan",
+      "notes": "Luke #139–159 & Raab #162–163 uncollected",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_2_101",
         "gcd": "https://www.comics.org/series/3367/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman by John Byrne Vols. 1–3 (#101–136, Annuals #5–6, Adventure Comics #1)",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+John+Byrne+Vol.+1"
-        },
-        {
-          "title": "Batman by Brian K. Vaughan (collects WW Vol. 2 #160–161)",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Batman+by+Brian+K.+Vaughan"
-        },
-        {
-          "title": "Wonder Woman Vol. 2 #137–159 & #162–163 (Priest, Luke, Raab Uncollected Gap)",
-          "format": "Uncollected",
-          "owned": false,
-          "uncollected": true,
-          "locg_url": ""
-        }
-      ]
+      "editionIds": ["ww-byrne-vols", "ww-90s-uncollected"]
     },
     {
-      "id": "pcr-04",
+      "id": "ww-pcr-04",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "4 (Jimenez & Simonson)",
-      "title": "WW Vol. 2 #164–194; Our Worlds at War #1; Secret Files #2–3; Teen Titans/Outsiders Secret Files #1–4",
+      "order": "4",
+      "issue": "WW Vol. 2 #164–194; Our Worlds at War #1; Secret Files #2–3; Teen Titans/Outsiders Secret Files #1–4",
+      "storyTitle": "Paradise Lost (#164–170); Paradise Found (#171–177); Our Worlds at War Tie-Ins; Simonson/Ordway Arc (#189–194)",
+      "arc": "Jimenez & Simonson (2001–2003)",
       "authors": ["Phil Jimenez (#164–188)", "George Pérez (#168–169)", "Walter Simonson (#189–194)", "Jerry Ordway"],
       "characters": ["Wonder Woman (Diana)", "Donna Troy", "Cassie Sandsmark", "Hippolyta", "Circe"],
-      "arcs": "Paradise Lost (#164–170); Paradise Found (#171–177); Our Worlds at War tie-ins; Simonson/Ordway arc (#189–194)",
       "read": false,
       "notes": "",
       "links": {
@@ -301,88 +380,53 @@
         "gcd": "https://www.comics.org/series/3367/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman by Phil Jimenez Omnibus (2025 ed., #164–188 + tie-ins)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Phil+Jimenez+Omnibus"
-        },
-        {
-          "title": "Paradise Lost; Paradise Found; Wonder Woman by Walt Simonson and Jerry Ordway (#189–194)",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Walt+Simonson+and+Jerry+Ordway"
-        }
-      ]
+      "editionIds": ["ww-jimenez-omni"]
     },
     {
-      "id": "pcr-05",
+      "id": "ww-pcr-05",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "5 (Greg Rucka Run I & Infinite Crisis)",
-      "title": "The Hiketeia OGN; WW Vol. 2 #195–226; The Flash #219; Identity Crisis; Infinite Crisis #1–7",
-      "authors": ["Greg Rucka", "J.G. Jones (art)", "Drew Johnson (art)", "Rags Morales (art)"],
-      "characters": ["Wonder Woman (Diana)", "Veronica Cale", "Ferdinand", "Medusa", "Ares", "Athena", "Maxwell Lord"],
-      "arcs": "The Hiketeia; Down to Earth; Bitter Rivals; Eyes of the Gorgon; Stoned; Sacrifice (Maxwell Lord); Infinite Crisis",
+      "order": "5",
+      "issue": "The Hiketeia OGN; WW Vol. 2 #195–226; The Flash #219; Identity Crisis; Infinite Crisis #1–7",
+      "storyTitle": "The Hiketeia; Down to Earth; Bitter Rivals; Stoned; Infinite Crisis Tie-Ins",
+      "arc": "Greg Rucka Run I & Infinite Crisis (2002–2006)",
+      "authors": ["Greg Rucka"],
+      "characters": ["Wonder Woman (Diana)", "Veronica Cale", "Ferdinand", "Medusa", "Ares", "Athena"],
       "read": false,
-      "notes": "Major diplomatic entry point; Vol. 2 concludes during Infinite Crisis",
+      "notes": "Major diplomatic entry point; Vol. 2 concludes at #226",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_2_195",
         "gcd": "https://www.comics.org/series/3367/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman by Greg Rucka Vols. 1–3 (collects The Hiketeia & WW Vol. 2 #195–226 + Flash #219)",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Greg+Rucka+Vol.+1"
-        },
-        {
-          "title": "Infinite Crisis TPB / Omnibus",
-          "format": "TPB / Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Infinite+Crisis"
-        }
-      ]
+      "editionIds": ["ww-rucka-v2"]
     },
     {
-      "id": "pcr-06",
+      "id": "ww-pcr-06",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "6 (Vol. 3 Launch & Amazons Attack)",
-      "title": "52; 52 Aftermath: The Four Horsemen #1–6; WW Vol. 3 #1–13, Annual #1; Amazons Attack! #1–6 (19-issue event)",
-      "authors": ["Allan Heinberg (#1–4)", "Jodi Picoult (#6–10)", "J. Torres (#11–13)", "Will Pfeifer (Amazons Attack)"],
-      "characters": ["Wonder Woman (Diana)", "Donna Troy", "Nemesis (Tom Tresser)", "Circe", "Hippolyta"],
-      "arcs": "One Year Later; Who Is Wonder Woman? (#1–4, Annual #1); Love and Murder (#5/6–10); Amazons Attack! (#11–13 + event #1–6)",
+      "order": "6",
+      "issue": "52; 52 Aftermath: The Four Horsemen #1–6; WW Vol. 3 #1–13, Annual #1; Amazons Attack! #1–6 (19-issue event)",
+      "storyTitle": "Who Is Wonder Woman? (#1–4, Annual #1); Love and Murder (#5/6–10); Amazons Attack! (#11–13 + event #1–6)",
+      "arc": "Vol. 3 Launch & Amazons Attack (2006–2007)",
+      "authors": ["Allan Heinberg (#1–4)", "Jodi Picoult (#6–10)", "J. Torres (#11–13)"],
+      "characters": ["Wonder Woman (Diana)", "Donna Troy", "Nemesis", "Circe", "Hippolyta"],
       "read": false,
-      "notes": "Collection listings vary on whether #5 is included in Love and Murder",
+      "notes": "Collection listings differ on whether #5 is included in Love and Murder",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_3_1",
         "gcd": "https://www.comics.org/series/16176/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Who Is Wonder Woman?; Love and Murder; Amazons Attack!; 52 Aftermath: The Four Horsemen",
-          "format": "TPB / HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Who+Is+Wonder+Woman"
-        }
-      ]
+      "editionIds": ["ww-v3-launch"]
     },
     {
-      "id": "pcr-07",
+      "id": "ww-pcr-07",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "7 (Gail Simone Run & Trinity)",
-      "title": "WW Vol. 3 #14–44, #600; Outsiders: Five of a Kind – WW/Grace #1; Brave and the Bold #7; Secret Six #10–14; Blackest Night: WW #1–3; DCU Halloween Special '09 #1; Trinity #1–52 (2008)",
-      "authors": ["Gail Simone", "Kurt Busiek (Trinity)", "Aaron Lopresti (art)"],
-      "characters": ["Wonder Woman (Diana)", "Nemesis", "Etta Candy", "Achilles", "Genocide", "Black Lanterns"],
-      "arcs": "The Circle (#14–19); Ends of the Earth (#20–25); Rise of the Olympian (#26–33); Warkiller (#34–39); Contagion (#40–44)",
+      "order": "7",
+      "issue": "WW Vol. 3 #14–44, #600; Outsiders: Five of a Kind – WW/Grace #1; Brave and the Bold #7; Secret Six #10–14; Blackest Night: WW #1–3; DCU Halloween Special '09 #1; Trinity #1–52 (2008)",
+      "storyTitle": "The Circle (#14–19); Ends of the Earth (#20–25); Rise of the Olympian (#26–33); Warkiller (#34–39); Contagion (#40–44)",
+      "arc": "Gail Simone Run & Trinity (2007–2010)",
+      "authors": ["Gail Simone", "Kurt Busiek (Trinity)"],
+      "characters": ["Wonder Woman (Diana)", "Nemesis", "Etta Candy", "Achilles", "Genocide"],
       "read": false,
       "notes": "Major warrior-focused entry point",
       "links": {
@@ -390,70 +434,35 @@
         "gcd": "https://www.comics.org/series/16176/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman by Gail Simone Omnibus",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Gail+Simone+Omnibus"
-        },
-        {
-          "title": "DC Finest: Wonder Woman – Origins & Omens (2024) & Dawn Before Darkness (2026)",
-          "format": "DC Finest TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=DC+Finest+Origins+and+Omens"
-        },
-        {
-          "title": "The Circle, Ends of the Earth, Rise of the Olympian, Warkiller, Contagion TPBs & Trinity Vols. 1–3",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Circle"
-        }
-      ]
+      "editionIds": ["ww-simone-omni"]
     },
     {
-      "id": "pcr-08",
+      "id": "ww-pcr-08",
       "era": "Post-Crisis to Flashpoint (1987–2011)",
-      "order": "8 (Odyssey & Flashpoint)",
-      "title": "WW Vol. 1 #600–614; Flashpoint #1–5; Flashpoint: Wonder Woman and the Furies #1–3",
-      "authors": ["J. Michael Straczynski", "Phil Hester", "Geoff Johns (Flashpoint)"],
+      "order": "8",
+      "issue": "WW Vol. 1 #600–614; Flashpoint #1–5; Flashpoint: Wonder Woman and the Furies #1–3",
+      "storyTitle": "Odyssey (#600–614 Alternate Timeline) & Flashpoint Amazon–Atlantean War",
+      "arc": "Odyssey & Flashpoint (2010–2011)",
+      "authors": ["J. Michael Straczynski", "Phil Hester"],
       "characters": ["Wonder Woman (Diana)", "Aquaman", "Flash (Barry Allen)"],
-      "arcs": "Odyssey (#600–614 alternate timeline); Flashpoint Amazon–Atlantean War",
       "read": false,
-      "notes": "Legacy numbering returned at #600 ahead of the New 52 reboot",
+      "notes": "",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_1_600",
         "gcd": "https://www.comics.org/series/16176/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman: Odyssey Vols. 1–2 (#600–614)",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Odyssey+Vol.+1"
-        },
-        {
-          "title": "Flashpoint TPB & World of Flashpoint Featuring Wonder Woman",
-          "format": "TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=World+of+Flashpoint+Featuring+Wonder+Woman"
-        }
-      ]
+      "editionIds": ["ww-odyssey-fp"]
     },
     {
-      "id": "n52-01",
+      "id": "ww-n52-01",
       "era": "The New 52 Era (2011–2016)",
-      "order": "1 (Azzarello & Chiang Run)",
-      "title": "Wonder Woman Vol. 4 #0–35, #23.1–23.2; Secret Origins Vol. 3 #6",
+      "order": "1",
+      "issue": "Wonder Woman Vol. 4 #0–35, #23.1–23.2; Secret Origins Vol. 3 #6",
+      "storyTitle": "Blood (#1–6); Guts (#7–12); Iron (#0, 13–18); War (#19–23.1); Flesh (#23.2, 24–29); Bones (#30–35)",
+      "arc": "Azzarello & Chiang Run (2011–2014)",
       "authors": ["Brian Azzarello", "Cliff Chiang (art)", "John Ostrander (#23.1)"],
-      "characters": ["Wonder Woman (Diana)", "Zola", "Hera", "Zeus", "First Born", "Orion", "Lennox", "Strife"],
-      "arcs": "Blood (#1–6); Guts (#7–12); Iron (#0, 13–18); War (#19–23.1); Flesh (#23.2, 24–29); Bones (#30–35)",
+      "characters": ["Wonder Woman (Diana)", "Zola", "Hera", "Zeus", "First Born", "Orion", "Strife"],
       "read": false,
       "notes": "Self-contained mythological horror reinvention; major new-reader entry point",
       "links": {
@@ -461,38 +470,17 @@
         "gcd": "https://www.comics.org/series/61124/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman by Brian Azzarello & Cliff Chiang Omnibus",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+by+Brian+Azzarello+Omnibus"
-        },
-        {
-          "title": "Absolute Wonder Woman by Brian Azzarello & Cliff Chiang Vols. 1–2",
-          "format": "Absolute HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Absolute+Wonder+Woman+by+Brian+Azzarello"
-        },
-        {
-          "title": "Vols. 1–6 TPBs/HCs; Blood and Guts Deluxe (#0–12) & DC Compact Comics (#1–12)",
-          "format": "TPB / Compact",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Vol.+1+Blood"
-        }
-      ]
+      "editionIds": ["ww-azzarello-omni"]
     },
     {
-      "id": "n52-02",
+      "id": "ww-n52-02",
       "era": "The New 52 Era (2011–2016)",
-      "order": "2 (Meredith Finch Run)",
-      "title": "Wonder Woman Vol. 4 #36–52, Annual #1",
-      "authors": ["Meredith Finch", "David Finch (art)"],
+      "order": "2",
+      "issue": "Wonder Woman Vol. 4 #36–52, Annual #1",
+      "storyTitle": "War-Torn (#36–40, Annual #1); A Twist of Faith (#41–47); Resurrection (#48–52)",
+      "arc": "Meredith Finch Run (2014–2016)",
+      "authors": ["Meredith Finch"],
       "characters": ["Wonder Woman (Diana)", "Donna Troy", "Aegeus"],
-      "arcs": "War-Torn (#36–40, Annual #1); A Twist of Faith (#41–47); Resurrection (#48–52)",
       "read": false,
       "notes": "",
       "links": {
@@ -500,81 +488,53 @@
         "gcd": "https://www.comics.org/series/61124/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Vol. 7: War-Torn; Vol. 8: A Twist of Faith; Vol. 9: Resurrection",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Vol.+7+War-Torn"
-        }
-      ]
+      "editionIds": ["ww-finch-tpbs"]
     },
     {
-      "id": "n52-03",
+      "id": "ww-n52-03",
       "era": "The New 52 Era (2011–2016)",
-      "order": "3 (Parallel New 52 Series)",
-      "title": "Superman/Wonder Woman #1–29/31, Annuals #1–2; WW: Futures End #1; S/WW: Futures End #1; Sensation Comics featuring WW #1–17; Convergence: WW #1–2",
-      "authors": ["Charles Soule", "Peter J. Tomasi", "Larry Hama (Convergence)", "Various"],
+      "order": "3",
+      "issue": "Superman/Wonder Woman #1–29/31, Annuals #1–2; WW: Futures End #1; S/WW: Futures End #1; Sensation Comics featuring WW #1–17; Convergence: WW #1–2",
+      "storyTitle": "Power Couple (#1–6/7); War and Peace (#8–12); Casualties of War (#13–17); The Dark Truth (#18–24); A Savage End (#25–29/31)",
+      "arc": "Parallel New 52 Series & Tie-Ins (2013–2016)",
+      "authors": ["Various (Larry Hama on Convergence; anthology creators on Sensation Comics)"],
       "characters": ["Wonder Woman (Diana)", "Superman", "Zod", "Doomsday"],
-      "arcs": "Power Couple (#1–6/7); War and Peace (#8–12); Casualties of War (#13–17); The Dark Truth (#18–24); A Savage End (#25–29/31)",
       "read": false,
-      "notes": "Collection tables vary on whether Vol. 5 includes #25–29 + Annual #2, #25–30, or #25–31",
+      "notes": "Collection tables vary on Vol. 5 ending at #29, #30, or #31",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Superman/Wonder_Woman_Vol_1_1",
         "gcd": "https://www.comics.org/series/77355/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Superman/Wonder Woman Vols. 1–5 & Sensation Comics featuring Wonder Woman Vols. 1–3",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Superman+Wonder+Woman+Vol.+1"
-        }
-      ]
+      "editionIds": ["ww-n52-parallel"]
     },
     {
-      "id": "rb-01",
+      "id": "ww-rb-01",
       "era": "DC Rebirth to Dawn of DC and DC All In (2016–2026)",
-      "order": "1 (Greg Rucka Rebirth Run)",
-      "title": "WW: Rebirth #1; WW Vol. 5 #1–25, Annual #1; Trinity #1–11 (2016)",
-      "authors": ["Greg Rucka", "Liam Sharp (art)", "Nicola Scott (art)", "Bilquis Evely (art)", "Francis Manapul (Trinity)"],
-      "characters": ["Wonder Woman (Diana)", "Steve Trevor", "Cheetah (Barbara Minerva)", "Veronica Cale", "Etta Candy", "Ares"],
-      "arcs": "The Lies (#1,3,5,7,9,11); Year One (#2,4,6,8,10,12,14); The Truth (#13,15,17,19,21,23,25); Godwatch (#16,18,20,22,24)",
+      "order": "1",
+      "issue": "WW: Rebirth #1; WW Vol. 5 #1–25, Annual #1; Trinity #1–11 (2016)",
+      "storyTitle": "The Lies (#1,3,5,7,9,11); Year One (#2,4,6,8,10,12,14); The Truth (#13,15,17,19,21,23,25); Godwatch (#16,18,20,22,24)",
+      "arc": "Greg Rucka Rebirth Run (2016–2017)",
+      "authors": ["Greg Rucka", "Francis Manapul & Cullen Bunn (Trinity)", "Liam Sharp (art)", "Nicola Scott (art)"],
+      "characters": ["Wonder Woman (Diana)", "Steve Trevor", "Cheetah (Barbara Minerva)", "Veronica Cale", "Ares"],
       "read": false,
-      "notes": "Alternating biweekly present-day & Year One timelines; top modern entry point",
+      "notes": "Alternating biweekly dual-timeline relaunch; major modern entry point",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_5_1",
         "gcd": "https://www.comics.org/series/99917/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman: Rebirth by Greg Rucka Omnibus (2026)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Rebirth+by+Greg+Rucka+Omnibus"
-        },
-        {
-          "title": "Vols. 1–4 TPBs; Rebirth Deluxe Edition Books 1–2; Trinity Vols. 1–2",
-          "format": "Deluxe HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Rebirth+Deluxe+Edition+Book+1"
-        }
-      ]
+      "editionIds": ["ww-rucka-rebirth"]
     },
     {
-      "id": "rb-02",
+      "id": "ww-rb-02",
       "era": "DC Rebirth to Dawn of DC and DC All In (2016–2026)",
-      "order": "2 (Fontana & Robinson Runs)",
-      "title": "WW Vol. 5 #26–50, Annual #2; WW: Steve Trevor #1; Trinity #12–22, Annual #1; Dark Nights: Metal #1–6; JL: No Justice #1–4",
+      "order": "2",
+      "issue": "WW Vol. 5 #26–50, Annual #2; WW: Steve Trevor #1; Trinity #12–22, Annual #1; Dark Nights: Metal #1–6; JL: No Justice #1–4",
+      "storyTitle": "Heart of the Amazon (#26–30); Children of the Gods (#31–37); Amazons Attacked (#38–45); Dark Gods (#46–50, Annual #2)",
+      "arc": "Fontana & Robinson Runs (2017–2018)",
       "authors": ["Shea Fontana (#26–30)", "James Robinson (#31–50 & Trinity #17–22)"],
       "characters": ["Wonder Woman (Diana)", "Jason (Twin Brother)", "Steve Trevor", "Grail", "Darkseid"],
-      "arcs": "Heart of the Amazon (#26–30); Children of the Gods (#31–37); Amazons Attacked (#38–45); Dark Gods (#46–50, Annual #2)",
       "read": false,
       "notes": "",
       "links": {
@@ -582,31 +542,17 @@
         "gcd": "https://www.comics.org/series/99917/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Wonder Woman: Children of the Gods Omnibus (2027, #26–57 + tie-ins)",
-          "format": "Omnibus HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Children+of+the+Gods+Omnibus"
-        },
-        {
-          "title": "Vols. 5–8 TPBs; Rebirth Deluxe Book 3; Trinity Vols. 3–4; Dark Nights: Metal",
-          "format": "Deluxe HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Vol.+5+Heart+of+the+Amazon"
-        }
-      ]
+      "editionIds": ["ww-children-omni"]
     },
     {
-      "id": "rb-03",
+      "id": "ww-rb-03",
       "era": "DC Rebirth to Dawn of DC and DC All In (2016–2026)",
-      "order": "3 (Orlando, Tynion, Wilson & Tamaki)",
-      "title": "WW Vol. 5 #51–83; WW Vol. 1 #750–769, Annual 2020; JLD #4; WW/JLD & JLD/WW: The Witching Hour #1; Dark Nights: Death Metal #1–7; JL: Endless Winter",
+      "order": "3",
+      "issue": "WW Vol. 5 #51–83; WW Vol. 1 #750–769, Annual 2020; JLD #4; WW/JLD & JLD/WW: The Witching Hour #1; Dark Nights: Death Metal #1–7; JL: Endless Winter",
+      "storyTitle": "Enemy of Both Sides (#51–55); The Witching Hour (#56–57); The Just War (#58–65); Love Is a Battlefield (#66–73); Loveless (#74–81); The Four Horsewomen (#82–83, #750–758); Lords & Liars (#759–769)",
+      "arc": "Orlando, Tynion, Wilson & Tamaki (2018–2020)",
       "authors": ["Steve Orlando", "James Tynion IV", "G. Willow Wilson", "Mariko Tamaki"],
       "characters": ["Wonder Woman (Diana)", "Hecate", "Circe", "Ares", "Cheetah", "Maxwell Lord"],
-      "arcs": "Enemy of Both Sides (#51–55); The Witching Hour (#56–57); The Just War (#58–65); Love Is a Battlefield (#66–73); Loveless (#74–81); The Four Horsewomen (#82–83, #750–758); Lords & Liars (#759–769)",
       "read": false,
       "notes": "Legacy numbering resumed at #750",
       "links": {
@@ -614,24 +560,17 @@
         "gcd": "https://www.comics.org/series/99917/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "The Enemy of Both Sides; WW & JLD: The Witching Hour; The Just War; Love Is a Battlefield; Loveless; The Four Horsewomen; Lords & Liars",
-          "format": "TPB / HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+Just+War"
-        }
-      ]
+      "editionIds": ["ww-wilson-tamaki"]
     },
     {
-      "id": "rb-04",
+      "id": "ww-rb-04",
       "era": "DC Rebirth to Dawn of DC and DC All In (2016–2026)",
-      "order": "4 (Infinite Frontier)",
-      "title": "WW Vol. 1 #770–800, 2021 Annual #1; Trial of the Amazons #1–2; Trial: Wonder Girl #1–2; Nubia & the Amazons #1–6; Wonder Girl #1–7; Lazarus Planet: Revenge of the Gods #1–4; Knight Terrors: WW #1–2",
+      "order": "4",
+      "issue": "WW Vol. 1 #770–800, 2021 Annual #1; Trial of the Amazons #1–2; Trial: Wonder Girl #1–2; Nubia & the Amazons #1–6; Wonder Girl #1–7; Artemis: Wanted #1; Olympus: Rebirth #1; Nubia: Coronation #1; Lazarus Planet: Revenge of the Gods #1–4; Knight Terrors: WW #1–2",
+      "storyTitle": "Afterworlds (#770–779); Through a Glass Darkly (#780–784); Trial of the Amazons (#785–786); The Villainy of Our Fears (#787–794); Revenge of the Gods (#795–800)",
+      "arc": "Infinite Frontier (2021–2023)",
       "authors": ["Becky Cloonan", "Michael W. Conrad", "Jordie Bellaire", "Vita Ayala (#781–784)", "Joëlle Jones (Wonder Girl)"],
       "characters": ["Wonder Woman (Diana)", "Nubia", "Yara Flor (Wonder Girl)", "Siegfried", "Hera"],
-      "arcs": "Afterworlds (#770–779); Through a Glass Darkly (#780–784); Trial of the Amazons (#785–786); The Villainy of Our Fears (#787–794); Revenge of the Gods (#795–800)",
       "read": false,
       "notes": "Trial of the Amazons order: Trial #1 -> Nubia #6 -> WW #785 -> Wonder Girl #1 -> Wonder Girl #2 -> WW #786 -> Trial #2",
       "links": {
@@ -639,88 +578,53 @@
         "gcd": "https://www.comics.org/series/169446/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Afterworlds; Through a Glass Darkly; Tales of the Amazons; Trial of the Amazons; The Villainy of Our Fears; Revenge of the Gods",
-          "format": "TPB / HC",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Afterworlds"
-        },
-        {
-          "title": "Lazarus Planet: Revenge of the Gods & Knight Terrors: Knightmare League",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Lazarus+Planet+Revenge+of+the+Gods"
-        }
-      ]
+      "editionIds": ["ww-if-tpbs"]
     },
     {
-      "id": "rb-05",
+      "id": "ww-rb-05",
       "era": "DC Rebirth to Dawn of DC and DC All In (2016–2026)",
-      "order": "5 (Dawn of DC & DC All In)",
-      "title": "WW Vol. 6 #1–38+ (40 issues listed); Amazons Attack Vol. 2 #1–6 (2023); Absolute Power #1–4; DC All In Special #1; Trinity: Daughter of Wonder Woman #1–5/6",
-      "authors": ["Tom King", "Daniel Sampere (art)", "Stephanie Williams (#29–30 / #35–36)", "Josie Campbell (Amazons Attack Vol. 2)"],
-      "characters": ["Wonder Woman (Diana)", "Trinity (Elizabeth Marston Prince)", "The Sovereign", "Steve Trevor", "Wonder Girls"],
-      "arcs": "Outlaw (#1–6); Gifted (#7); Sacrifice (#8–13); Fury (#14–19); Murder on Mt. Olympus (#20–21); The Island of Mice and Men (#22–28); The Wonder War (#31–38+)",
+      "order": "5",
+      "issue": "WW Vol. 6 #1–38+ (40 issues listed); Amazons Attack Vol. 2 #1–6 (2023); Absolute Power #1–4; DC All In Special #1; Trinity: Daughter of Wonder Woman #1–5/6",
+      "storyTitle": "Outlaw (#1–6); Gifted (#7); Sacrifice (#8–13); Fury (#14–19); Murder on Mt. Olympus (#20–21); The Island of Mice and Men (#22–28); The Wonder War (#31–38+)",
+      "arc": "Dawn of DC & DC All In (2023–2026)",
+      "authors": ["Tom King", "Stephanie Williams (#29–30 / #35–36)", "Josie Campbell (Amazons Attack Vol. 2)", "Daniel Sampere (art)"],
+      "characters": ["Wonder Woman (Diana)", "Trinity (Elizabeth Marston Prince)", "The Sovereign", "Steve Trevor"],
       "read": false,
-      "notes": "Issue #14 marks DC All In start; #20–21 fall between Vol. 3 and Vol. 4 trade contents",
+      "notes": "#14 marks DC All In launch; #20–21 fall between Vol. 3 and Vol. 4 trade contents",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman_Vol_6_1",
         "gcd": "https://www.comics.org/series/201851/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Vol. 1: Outlaw (#1–6); Vol. 2: Sacrifice (#7–13); Vol. 3: Fury (#14–19); Vol. 4: The Island of Mice and Men (#22–28)",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Vol.+1+Outlaw"
-        },
-        {
-          "title": "Vol. 5: The Wonder War Act I (#31–36, Nov 2026); Vol. 6: Act II (June 2027); Amazons Attack (2024); Trinity: Daughter of WW (2026)",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Trinity+Daughter+of+Wonder+Woman"
-        }
-      ]
+      "editionIds": ["ww-king-tpbs"]
     },
     {
-      "id": "ew-01",
+      "id": "ww-ew-01",
       "era": "Side Stories, Elseworlds, Crossovers, and Absolute Wonder Woman",
-      "order": "1 (Absolute Universe)",
-      "title": "Absolute Wonder Woman #1–29+ (solicited through Feb 2027); 2026 Annual #1; Absolute Batman #16 (after #15)",
+      "order": "1",
+      "issue": "Absolute Wonder Woman #1–29+ (solicited through Feb 2027); 2026 Annual #1; Absolute Batman #16 (after #15)",
+      "storyTitle": "The Last Amazon (#1–5); The Lady or the Tiger (#6–7); As My Mothers Made Me (#8–12); The Price (#13–14); Mark of Hecate (#15); Season of the Witch (#16–20); Friends & Neighbors (#21–22); Heretic (#23–25+)",
+      "arc": "Absolute Universe (Earth-Alpha, 2024–ongoing)",
       "authors": ["Kelly Thompson", "Hayden Sherman (art)"],
       "characters": ["Wonder Woman (Diana)", "Circe", "Steve Trevor", "Absolute Batman"],
-      "arcs": "The Last Amazon (#1–5); The Lady or the Tiger (#6–7); As My Mothers Made Me (#8–12); The Price (#13–14); Mark of Hecate (#15); Season of the Witch (#16–20); Friends & Neighbors (#21–22); Heretic (#23–25+)",
       "read": false,
-      "notes": "Earth-Alpha reimagining raised in the Underworld by Circe; Vol. 3 omits Absolute Batman #16 crossover",
+      "notes": "Reimagines Diana as a witch raised in the Underworld by Circe; Vol. 3 omits Absolute Batman #16",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Absolute_Wonder_Woman_Vol_1_1",
         "gcd": "https://www.comics.org/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Absolute Wonder Woman Vol. 1: The Last Amazon (#1–7); Vol. 2: As My Mothers Made Me (#8–14); Vol. 3: Season of the Witch (#15–20, 2026 Annual #1; Oct 2026)",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Absolute+Wonder+Woman+Vol.+1+The+Last+Amazon"
-        }
-      ]
+      "editionIds": ["ww-absolute-tpbs"]
     },
     {
-      "id": "ew-02",
+      "id": "ww-ew-02",
       "era": "Side Stories, Elseworlds, Crossovers, and Absolute Wonder Woman",
-      "order": "2 (Out-of-Continuity & Black Label)",
-      "title": "Wonder Woman: Earth One Vols. 1–3; WW Historia: The Amazons #1–3; WW: Dead Earth #1–4; Legend of WW #1–9 (2015); WW: Evolution #1–8; JLA: A League of One; Spirit of Truth",
-      "authors": ["Grant Morrison (Earth One)", "Kelly Sue DeConnick (Historia)", "Daniel Warren Johnson (Dead Earth)", "Renae De Liz", "Stephanie Phillips", "Christopher Moeller", "Paul Dini"],
+      "order": "2",
+      "issue": "Wonder Woman: Earth One Vols. 1–3; WW Historia: The Amazons #1–3; WW: Dead Earth #1–4; Legend of WW #1–9 (2015); WW: Evolution #1–8; JLA: A League of One; Spirit of Truth",
+      "storyTitle": "Marston-Inspired Origin (Earth One); Amazon Origins (Historia); Nuclear Wasteland (Dead Earth); Cosmic Trial (Evolution)",
+      "arc": "Major Out-of-Continuity & Black Label",
+      "authors": ["Grant Morrison (Earth One)", "Kelly Sue DeConnick (Historia)", "Daniel Warren Johnson (Dead Earth)", "Renae De Liz (Legend)", "Stephanie Phillips (Evolution)", "Christopher Moeller", "Paul Dini"],
       "characters": ["Wonder Woman (Diana)", "Hippolyta", "Amazons"],
-      "arcs": "Marston-inspired origin (Earth One); Amazon origins (Historia); nuclear wasteland (Dead Earth); cosmic trial (Evolution)",
       "read": false,
       "notes": "",
       "links": {
@@ -728,24 +632,17 @@
         "gcd": "https://www.comics.org/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "WW: Earth One Vols. 1–3 / Complete Collection / Compact; WW Historia HC; Dead Earth HC; Evolution TPB; JLA: A League of One",
-          "format": "HC / TPB / Compact",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Historia+The+Amazons"
-        }
-      ]
+      "editionIds": ["ww-elseworlds-editions"]
     },
     {
-      "id": "ew-03",
+      "id": "ww-ew-03",
       "era": "Side Stories, Elseworlds, Crossovers, and Absolute Wonder Woman",
-      "order": "3 (Anthologies & Alternate Futures)",
-      "title": "Future State: WW #1–2, Immortal WW #1–2, Superman/WW #1–2; WW: Black and Gold #1–6; Sensational WW (2021) #1–4/7 + Special; Agent of Peace #1–23; Dark Crisis: Worlds Without a JL – WW",
+      "order": "3",
+      "issue": "Future State: WW #1–2, Immortal WW #1–2, Superman/WW #1–2; WW: Black and Gold #1–6; Sensational WW (2021) #1–4/7 + Special; Agent of Peace #1–23; Dark Crisis: Worlds Without a JL – WW",
+      "storyTitle": "Yara Flor/Nubia Futures (Future State); 80th-Anniversary & Digital-First Shorts",
+      "arc": "Anthologies & Alternate Futures",
       "authors": ["Mariko Tamaki", "Tillie Walden", "Stephanie Phillips", "Various"],
       "characters": ["Yara Flor", "Nubia", "Wonder Woman (Diana)"],
-      "arcs": "Yara Flor/Nubia Future State futures; 80th-anniversary & digital-first anthology shorts",
       "read": false,
       "notes": "",
       "links": {
@@ -753,49 +650,35 @@
         "gcd": "https://www.comics.org/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Future State: Wonder Woman; WW: Black and Gold; Sensational WW (2021); Agent of Peace Vols. 1–2",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Black+and+Gold"
-        }
-      ]
+      "editionIds": ["ww-elseworlds-editions"]
     },
     {
-      "id": "ew-04",
+      "id": "ww-ew-04",
       "era": "Side Stories, Elseworlds, Crossovers, and Absolute Wonder Woman",
-      "order": "4 (Classic Elseworlds & Retroactive)",
-      "title": "WW Annual #5 (1996); S/WW: Whom Gods Destroy #1–4; WW: Amazonia #1; Tangent: WW #1; Realworlds: WW; Just Imagine Stan Lee; The Blue Amazon; Tales from the Dark Multiverse: War of the Gods #1; Forgotten Legends; DC Retroactive '70s/'80s/'90s",
-      "authors": ["John Byrne", "Chris Claremont", "William Messner-Loebs", "Peter David", "Stan Lee", "Vita Ayala", "Kurt Busiek", "Denny O'Neil", "Roy Thomas"],
+      "order": "4",
+      "issue": "WW Annual #5 (1996); S/WW: Whom Gods Destroy #1–4; WW: Amazonia #1; Tangent: WW #1; Realworlds: WW; Just Imagine Stan Lee; The Blue Amazon; Tales from the Dark Multiverse: War of the Gods #1; Forgotten Legends; DC Retroactive '70s/'80s/'90s",
+      "storyTitle": "Victorian London (Amazonia); Nazi WWII (Whom Gods Destroy); Hecate Possession (Dark Multiverse); Era Pastiches",
+      "arc": "Classic Elseworlds & Retroactive",
+      "authors": ["John Byrne", "Chris Claremont", "William Messner-Loebs", "Peter David", "Stan Lee", "Jean-Marc & Randy Lofficier", "Vita Ayala", "Kurt Busiek & Trina Robbins", "Dennis O'Neil", "Roy Thomas"],
       "characters": ["Wonder Woman (Diana)", "Maria Mendoza", "Hecate"],
-      "arcs": "Victorian London (Amazonia); Nazi WWII (Whom Gods Destroy); Dark Multiverse War of the Gods; Retroactive era pastiches",
       "read": false,
-      "notes": "Retroactive '90s collected in Book 2: Ares Rising; Dark Multiverse War of the Gods in Tales from the DC Dark Multiverse II",
+      "notes": "",
       "links": {
         "dc_wiki": "https://dc.fandom.com/wiki/Wonder_Woman:_Amazonia",
         "gcd": "https://www.comics.org/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "Prestige One-Shots / Miniseries; Tales from the DC Dark Multiverse II; Book 2: Ares Rising ('90s Retroactive)",
-          "format": "Prestige / HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Amazonia"
-        }
-      ]
+      "editionIds": ["ww-elseworlds-editions"]
     },
     {
-      "id": "ew-05",
+      "id": "ww-ew-05",
       "era": "Side Stories, Elseworlds, Crossovers, and Absolute Wonder Woman",
-      "order": "5 (Media Tie-Ins & YA/Kids OGNs)",
-      "title": "WW '77 Special #1–4; Gods and Monsters: WW #1–3; WW 1984 #1; Diana: Princess of the Amazons; Diana and Nubia; Tempest Tossed; Warbringer; The True Amazon",
-      "authors": ["Shannon & Dean Hale", "Laurie Halse Anderson", "Leigh Bardugo", "Louise Simonson", "Jill Thompson"],
+      "order": "5",
+      "issue": "WW '77 Special #1–4; Gods and Monsters: WW #1–3; WW 1984 #1; Diana: Princess of the Amazons; Diana and Nubia; Tempest Tossed; Warbringer; The True Amazon",
+      "storyTitle": "1970s Lynda Carter TV Tie-Ins; Animated/Film Prequels; Middle-Grade and YA Origin Reimaginings",
+      "arc": "Media Tie-Ins & YA/Kids Graphic Novels",
+      "authors": ["Shannon & Dean Hale", "Laurie Halse Anderson", "Leigh Bardugo & Louise Simonson", "Jill Thompson"],
       "characters": ["Wonder Woman (Diana)", "Nubia", "Bekka"],
-      "arcs": "1970s Lynda Carter TV tie-ins; animated/film prequels; middle-grade & YA origin graphic novels",
       "read": false,
       "notes": "",
       "links": {
@@ -803,24 +686,17 @@
         "gcd": "https://www.comics.org/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "WW '77 Vols. 1–2; Standalone YA/Kids OGNs (The True Amazon, Warbringer, Tempest Tossed, Princess of the Amazons)",
-          "format": "TPB / OGN",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+The+True+Amazon"
-        }
-      ]
+      "editionIds": ["ww-elseworlds-editions"]
     },
     {
-      "id": "ew-06",
+      "id": "ww-ew-06",
       "era": "Side Stories, Elseworlds, Crossovers, and Absolute Wonder Woman",
-      "order": "6 (Inter-Company & DC Special Crossovers)",
-      "title": "Storm/WW: Amazon #1; Marvel/DC: Deadpool/Batman #1 ('The Gun & the Sword'); Spider-Man/Superman ('The Wondrous and the Worthy', 2026); WW/Conan #1–6; WW/Tasmanian Devil #1; Batman '66 Meets WW '77 #1–6; WW '77 Meets the Bionic Woman #1–6; Brave and the Bold: Batman and WW #1–6",
+      "order": "6",
+      "issue": "Storm/WW: Amazon #1; Marvel/DC: Deadpool/Batman #1 ('The Gun & the Sword'); Spider-Man/Superman ('The Wondrous and the Worthy', 2026); WW/Conan #1–6; WW/Tasmanian Devil #1; Batman '66 Meets WW '77 #1–6; WW '77 Meets the Bionic Woman #1–6; Brave and the Bold: Batman and WW #1–6",
+      "storyTitle": "Team-Ups with Captain America, Thor, Conan, Tasmanian Devil, Adam West Batman, Bionic Woman, Celtic Myth Batman & Storm Amalgam Fusion",
+      "arc": "Inter-Company & DC Special Crossovers",
       "authors": ["John Byrne", "Chip Zdarsky", "Jason Aaron", "Gail Simone", "Tony Bedard", "Liam Sharp"],
       "characters": ["Wonder Woman (Diana)", "Batman", "Conan", "Captain America", "Thor", "Storm (Amazon)"],
-      "arcs": "Team-ups with Captain America, Thor, Conan, Tasmanian Devil, Batman '66, Bionic Woman, Celtic myth Batman; Amalgam fusion with Storm",
       "read": false,
       "notes": "",
       "links": {
@@ -828,15 +704,7 @@
         "gcd": "https://www.comics.org/",
         "dcui": ""
       },
-      "editions": [
-        {
-          "title": "WW/Conan HC/TPB; Batman '66 Meets WW '77; WW '77 Meets the Bionic Woman; The Brave and the Bold: Batman and Wonder Woman",
-          "format": "HC / TPB",
-          "owned": false,
-          "uncollected": false,
-          "locg_url": "https://leagueofcomicgeeks.com/search?keyword=Wonder+Woman+Conan"
-        }
-      ]
+      "editionIds": ["ww-elseworlds-editions"]
     }
   ]
 }
