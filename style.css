@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -132,7 +132,14 @@ th {
   font-weight: 600;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
+
+.col-check { width: 48px; text-align: center; }
+.col-issue { min-width: 280px; }
+.col-arc { min-width: 190px; }
+.col-authors { min-width: 160px; }
+.col-editions { min-width: 300px; }
 
 tr.era-banner td {
   background: #131920;
@@ -145,11 +152,68 @@ tr.era-banner td {
 tr.is-read { background: var(--accent-soft); }
 tr:hover:not(.era-banner) { background: var(--surface-hover); }
 
+.issue-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.order-num {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+.issue-code {
+  font-weight: 700;
+  color: var(--text);
+}
+.story-title {
+  color: #c9d1d9;
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+
+.link-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+.link-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  color: var(--link);
+  text-decoration: none;
+}
+.link-pill:hover {
+  background: rgba(88, 166, 255, 0.2);
+  text-decoration: underline;
+}
+
 .edition-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.45rem;
-  margin-bottom: 0.35rem;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.06);
+}
+.edition-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.edition-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.2rem;
 }
 
 .badge {
@@ -169,7 +233,7 @@ tr:hover:not(.era-banner) { background: var(--surface-hover); }
 
 .note-input {
   width: 100%;
-  margin-top: 0.4rem;
+  margin-top: 0.45rem;
   padding: 0.3rem 0.5rem;
   font-size: 0.8rem;
   background: rgba(0, 0, 0, 0.25);
@@ -182,7 +246,3 @@ tr:hover:not(.era-banner) { background: var(--surface-hover); }
   border-color: var(--border);
   color: var(--text);
 }
-
-.ext-links { display: flex; flex-direction: column; gap: 0.25rem; }
-.ext-links a { color: var(--link); text-decoration: none; font-size: 0.82rem; }
-.ext-links a:hover { text-decoration: underline; }
