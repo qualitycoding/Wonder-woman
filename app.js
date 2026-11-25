@@ -19,21 +19,35 @@ function saveUserState() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
 }
 
-function isItemRead(item) {
-  return userState.read[item.id] !== undefined ? userState.read[item.id] : Boolean(item.read);
+function isIssueRead(issue) {
+  return userState.read[issue.id] !== undefined ? userState.read[issue.id] : Boolean(issue.read);
 }
 
-function isEditionOwned(itemId, idx, edition) {
-  const key = `${itemId}::${idx}`;
-  return userState.owned[key] !== undefined ? userState.owned[key] : Boolean(edition.owned);
+function isEditionOwned(editionId) {
+  const ed = (baseData.editions || {})[editionId];
+  if (!ed) return false;
+  return userState.owned[editionId] !== undefined ? userState.owned[editionId] : Boolean(ed.owned);
 }
 
-function getItemNote(item) {
-  return userState.notes[item.id] !== undefined ? userState.notes[item.id] : (item.notes || '');
+function getIssueNote(issue) {
+  return userState.notes[issue.id] !== undefined ? userState.notes[issue.id] : (issue.notes || '');
+}
+
+function renderLinks(linksObj) {
+  if (!linksObj) return '';
+  const items = [
+    linksObj.dc_wiki ? `<a class="link-pill" href="${linksObj.dc_wiki}" target="_blank" rel="noopener">DC Wiki ↗</a>` : '',
+    linksObj.gcd ? `<a class="link-pill" href="${linksObj.gcd}" target="_blank" rel="noopener">GCD ↗</a>` : '',
+    linksObj.dcui ? `<a class="link-pill" href="${linksObj.dcui}" target="_blank" rel="noopener">DCUI ↗</a>` : '',
+    linksObj.locg_url ? `<a class="link-pill" href="${linksObj.locg_url}" target="_blank" rel="noopener">LoCG ↗</a>` : ''
+  ].filter(Boolean);
+
+  return items.length ? `<div class="link-pills">${items.join('')}</div>` : '';
 }
 
 function populateDropdowns() {
-  const eras = [...new Set(baseData.items.map(i => i.era))];
+  const issues = baseData.issues || [];
+  const eras = [...new Set(issues.map(i => i.era))];
   const eraSelect = document.getElementById('era-filter');
   eras.forEach(era => {
     const opt = document.createElement('option');
@@ -42,7 +56,7 @@ function populateDropdowns() {
     eraSelect.appendChild(opt);
   });
 
-  const chars = [...new Set(baseData.items.flatMap(i => i.characters || []))].sort();
+  const chars = [...new Set(issues.flatMap(i => i.characters || []))].sort();
   const charSelect = document.getElementById('character-filter');
   chars.forEach(ch => {
     const opt = document.createElement('option');
@@ -58,48 +72,47 @@ function render() {
   const statusFilter = document.getElementById('status-filter').value;
   const charFilter = document.getElementById('character-filter').value;
 
+  const issues = baseData.issues || [];
+  const editionsMap = baseData.editions || {};
   const tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
 
-  let totalRead = 0;
-  let totalEditions = 0;
-  let totalOwned = 0;
-
   // Global stats
-  baseData.items.forEach(item => {
-    if (isItemRead(item)) totalRead++;
-    (item.editions || []).forEach((ed, idx) => {
-      if (!ed.uncollected) {
-        totalEditions++;
-        if (isEditionOwned(item.id, idx, ed)) totalOwned++;
-      }
-    });
+  let totalRead = 0;
+  issues.forEach(issue => {
+    if (isIssueRead(issue)) totalRead++;
   });
 
-  // Filtered rows
-  const filtered = baseData.items.filter(item => {
-    const read = isItemRead(item);
-    const editions = item.editions || [];
-    const anyOwned = editions.some((ed, idx) => isEditionOwned(item.id, idx, ed));
-    const hasUncollected = editions.some(ed => ed.uncollected);
+  const collectableEditionIds = Object.keys(editionsMap).filter(id => !editionsMap[id].uncollected);
+  const totalOwned = collectableEditionIds.filter(id => isEditionOwned(id)).length;
 
-    if (eraFilter !== 'all' && item.era !== eraFilter) return false;
-    if (charFilter !== 'all' && !(item.characters || []).includes(charFilter)) return false;
+  // Filtered issues
+  const filtered = issues.filter(issue => {
+    const read = isIssueRead(issue);
+    const edIds = issue.editionIds || [];
+    const issueEditions = edIds.map(id => editionsMap[id]).filter(Boolean);
+
+    const anyOwned = edIds.some(id => isEditionOwned(id));
+    const isUncollectedOnly = issueEditions.length > 0 && issueEditions.every(ed => ed.uncollected);
+
+    if (eraFilter !== 'all' && issue.era !== eraFilter) return false;
+    if (charFilter !== 'all' && !(issue.characters || []).includes(charFilter)) return false;
 
     if (statusFilter === 'read' && !read) return false;
     if (statusFilter === 'unread' && read) return false;
     if (statusFilter === 'owned' && !anyOwned) return false;
     if (statusFilter === 'unowned' && anyOwned) return false;
-    if (statusFilter === 'uncollected' && !hasUncollected) return false;
+    if (statusFilter === 'uncollected' && !isUncollectedOnly) return false;
 
     if (query) {
       const haystack = [
-        item.title,
-        item.arcs,
-        getItemNote(item),
-        ...(item.authors || []),
-        ...(item.characters || []),
-        ...editions.map(e => e.title)
+        issue.issue,
+        issue.storyTitle,
+        issue.arc,
+        getIssueNote(issue),
+        ...(issue.authors || []),
+        ...(issue.characters || []),
+        ...issueEditions.map(e => e.title)
       ].join(' ').toLowerCase();
       if (!haystack.includes(query)) return false;
     }
@@ -107,64 +120,63 @@ function render() {
   });
 
   let currentEra = null;
-  filtered.forEach(item => {
-    if (item.era !== currentEra) {
-      currentEra = item.era;
+  filtered.forEach(issue => {
+    if (issue.era !== currentEra) {
+      currentEra = issue.era;
       const banner = document.createElement('tr');
       banner.className = 'era-banner';
-      banner.innerHTML = `<td colspan="7">${currentEra}</td>`;
+      banner.innerHTML = `<td colspan="5">${currentEra}</td>`;
       tbody.appendChild(banner);
     }
 
-    const read = isItemRead(item);
+    const read = isIssueRead(issue);
     const tr = document.createElement('tr');
     if (read) tr.className = 'is-read';
 
-    const editionsHtml = (item.editions || []).map((ed, idx) => {
-      const owned = isEditionOwned(item.id, idx, ed);
+    const editionsHtml = (issue.editionIds || []).map(edId => {
+      const ed = editionsMap[edId];
+      if (!ed) return '';
+      const owned = isEditionOwned(edId);
       const badgeClass = ed.uncollected ? 'badge badge-uncollected' : 'badge';
-      const titleHtml = ed.locg_url
-        ? `<a href="${ed.locg_url}" target="_blank" rel="noopener" style="color:inherit">${ed.title}</a>`
-        : ed.title;
+      const edLinks = renderLinks({ locg_url: ed.locg_url, dc_wiki: ed.dc_wiki, gcd: ed.gcd });
 
       return `
         <div class="edition-item">
-          ${ed.uncollected ? '' : `<input type="checkbox" data-ed-id="${item.id}" data-ed-idx="${idx}" ${owned ? 'checked' : ''} />`}
+          ${ed.uncollected ? '' : `<input type="checkbox" data-ed-id="${edId}" ${owned ? 'checked' : ''} title="Mark edition as owned across all issues" />`}
           <div>
-            <div>${titleHtml}</div>
-            ${ed.format ? `<span class="${badgeClass}">${ed.format}</span>` : ''}
+            <div>${ed.title}</div>
+            <div class="edition-meta">
+              ${ed.format ? `<span class="${badgeClass}">${ed.format}</span>` : ''}
+            </div>
+            ${edLinks}
           </div>
         </div>
       `;
     }).join('');
 
-    const links = item.links || {};
-    const linksHtml = [
-      links.dc_wiki ? `<a href="${links.dc_wiki}" target="_blank" rel="noopener">DC Wiki ↗</a>` : '',
-      links.gcd ? `<a href="${links.gcd}" target="_blank" rel="noopener">GCD ↗</a>` : '',
-      links.dcui ? `<a href="${links.dcui}" target="_blank" rel="noopener">DCUI ↗</a>` : ''
-    ].filter(Boolean).join('');
-
     tr.innerHTML = `
-      <td><input type="checkbox" data-read-id="${item.id}" ${read ? 'checked' : ''} /></td>
-      <td>${item.order}</td>
-      <td>
-        <strong>${item.title}</strong>
-        <input type="text" class="note-input" data-note-id="${item.id}" value="${getItemNote(item).replace(/"/g, '&quot;')}" placeholder="Add personal note..." />
+      <td class="col-check"><input type="checkbox" data-read-id="${issue.id}" ${read ? 'checked' : ''} /></td>
+      <td class="col-issue">
+        <div class="issue-header">
+          <span class="order-num">#${issue.order}</span>
+          <span class="issue-code">${issue.issue}</span>
+        </div>
+        ${issue.storyTitle ? `<div class="story-title">"${issue.storyTitle}"</div>` : ''}
+        ${renderLinks(issue.links)}
+        <input type="text" class="note-input" data-note-id="${issue.id}" value="${getIssueNote(issue).replace(/"/g, '&quot;')}" placeholder="Add issue note..." />
       </td>
-      <td>${(item.authors || []).join(', ')}</td>
-      <td>${item.arcs || ''}</td>
-      <td>${editionsHtml}</td>
-      <td><div class="ext-links">${linksHtml}</div></td>
+      <td class="col-arc">${issue.arc || ''}</td>
+      <td class="col-authors">${(issue.authors || []).join(', ')}</td>
+      <td class="col-editions">${editionsHtml}</td>
     `;
     tbody.appendChild(tr);
   });
 
   // Update stats UI
-  const pct = baseData.items.length ? Math.round((totalRead / baseData.items.length) * 100) : 0;
-  document.getElementById('stat-read').textContent = `${totalRead} / ${baseData.items.length} (${pct}%)`;
-  document.getElementById('stat-owned').textContent = `${totalOwned} / ${totalEditions}`;
-  document.getElementById('stat-showing').textContent = `${filtered.length} entries`;
+  const pct = issues.length ? Math.round((totalRead / issues.length) * 100) : 0;
+  document.getElementById('stat-read').textContent = `${totalRead} / ${issues.length} (${pct}%)`;
+  document.getElementById('stat-owned').textContent = `${totalOwned} / ${collectableEditionIds.length}`;
+  document.getElementById('stat-showing').textContent = `${filtered.length} issues`;
   document.getElementById('progress-fill').style.width = `${pct}%`;
 }
 
@@ -183,8 +195,7 @@ function bindEvents() {
     }
     const edId = e.target.getAttribute('data-ed-id');
     if (edId) {
-      const idx = e.target.getAttribute('data-ed-idx');
-      userState.owned[`${edId}::${idx}`] = e.target.checked;
+      userState.owned[edId] = e.target.checked;
       saveUserState();
       render();
     }
@@ -201,12 +212,12 @@ function bindEvents() {
   // Export merged data.json so you can commit your progress back to GitHub
   document.getElementById('export-btn').addEventListener('click', () => {
     const merged = structuredClone(baseData);
-    merged.items.forEach(item => {
-      item.read = isItemRead(item);
-      item.notes = getItemNote(item);
-      (item.editions || []).forEach((ed, idx) => {
-        ed.owned = isEditionOwned(item.id, idx, ed);
-      });
+    (merged.issues || []).forEach(issue => {
+      issue.read = isIssueRead(issue);
+      issue.notes = getIssueNote(issue);
+    });
+    Object.keys(merged.editions || {}).forEach(edId => {
+      merged.editions[edId].owned = isEditionOwned(edId);
     });
     const blob = new Blob([JSON.stringify(merged, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
@@ -222,12 +233,12 @@ function bindEvents() {
     const reader = new FileReader();
     reader.onload = ev => {
       const imported = JSON.parse(ev.target.result);
-      (imported.items || []).forEach(item => {
-        userState.read[item.id] = Boolean(item.read);
-        userState.notes[item.id] = item.notes || '';
-        (item.editions || []).forEach((ed, idx) => {
-          userState.owned[`${item.id}::${idx}`] = Boolean(ed.owned);
-        });
+      (imported.issues || []).forEach(issue => {
+        userState.read[issue.id] = Boolean(issue.read);
+        userState.notes[issue.id] = issue.notes || '';
+      });
+      Object.entries(imported.editions || {}).forEach(([edId, ed]) => {
+        userState.owned[edId] = Boolean(ed.owned);
       });
       saveUserState();
       render();
