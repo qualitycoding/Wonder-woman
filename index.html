@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading Order & Collection Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div>
+          <h1 id="site-title">Loading Tracker...</h1>
+          <p id="site-subtitle" class="subtitle"></p>
+        </div>
+        <div class="backup-controls">
+          <button id="export-btn" class="btn btn-secondary" title="Download progress & notes as JSON">Export Progress</button>
+          <label class="btn btn-secondary" title="Restore progress from a JSON backup">
+            Import JSON
+            <input type="file" id="import-input" accept=".json" hidden />
+          </label>
+          <button id="reset-btn" class="btn btn-danger" title="Clear browser overrides and revert to data.json">Reset Local</button>
+        </div>
+      </div>
+
+      <!-- Progress Dashboard -->
+      <div class="stats-bar">
+        <div class="stat-box">
+          <span class="stat-label">Arcs Read</span>
+          <span id="stat-read" class="stat-value">0 / 0 (0%)</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Editions Owned</span>
+          <span id="stat-owned" class="stat-value">0 / 0</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Showing</span>
+          <span id="stat-showing" class="stat-value">0 entries</span>
+        </div>
+      </div>
+      <div class="progress-track">
+        <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Filter Controls -->
+    <section class="filters-panel">
+      <input type="search" id="search-input" placeholder="Search issues, arcs, authors, or editions..." />
+
+      <select id="era-filter">
+        <option value="all">All Eras</option>
+      </select>
+
+      <select id="status-filter">
+        <option value="all">All Statuses</option>
+        <option value="unread">Unread Only</option>
+        <option value="read">Read Only</option>
+        <option value="owned">Owned Edition</option>
+        <option value="unowned">Unowned Edition</option>
+        <option value="uncollected">Uncollected / Gap</option>
+      </select>
+
+      <select id="character-filter">
+        <option value="all">All Focus Characters</option>
+      </select>
+    </section>
+
+    <!-- Reading Order Table -->
+    <div class="table-wrapper">
+      <table id="tracker-table">
+        <thead>
+          <tr>
+            <th class="col-check">Read</th>
+            <th class="col-order">#</th>
+            <th class="col-issues">Issues & Tie-Ins</th>
+            <th class="col-authors">Primary Author(s)</th>
+            <th class="col-arcs">Story Arcs & Milestones</th>
+            <th class="col-editions">Collected Editions (Tick Owned)</th>
+            <th class="col-links">Canonical Links</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Populated dynamically by app.js -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
