@@ -27,7 +27,7 @@
       <!-- Progress Dashboard -->
       <div class="stats-bar">
         <div class="stat-box">
-          <span class="stat-label">Arcs Read</span>
+          <span class="stat-label">Issues Read</span>
           <span id="stat-read" class="stat-value">0 / 0 (0%)</span>
         </div>
         <div class="stat-box">
@@ -36,7 +36,7 @@
         </div>
         <div class="stat-box">
           <span class="stat-label">Showing</span>
-          <span id="stat-showing" class="stat-value">0 entries</span>
+          <span id="stat-showing" class="stat-value">0 issues</span>
         </div>
       </div>
       <div class="progress-track">
@@ -48,7 +48,7 @@
   <main class="container">
     <!-- Filter Controls -->
     <section class="filters-panel">
-      <input type="search" id="search-input" placeholder="Search issues, arcs, authors, or editions..." />
+      <input type="search" id="search-input" placeholder="Search issue #, story title, arc, author, or edition..." />
 
       <select id="era-filter">
         <option value="all">All Eras</option>
@@ -56,11 +56,11 @@
 
       <select id="status-filter">
         <option value="all">All Statuses</option>
-        <option value="unread">Unread Only</option>
-        <option value="read">Read Only</option>
-        <option value="owned">Owned Edition</option>
-        <option value="unowned">Unowned Edition</option>
-        <option value="uncollected">Uncollected / Gap</option>
+        <option value="unread">Unread Issues</option>
+        <option value="read">Read Issues</option>
+        <option value="owned">In Owned Edition</option>
+        <option value="unowned">Not in Owned Edition</option>
+        <option value="uncollected">Uncollected Issue</option>
       </select>
 
       <select id="character-filter">
@@ -74,12 +74,10 @@
         <thead>
           <tr>
             <th class="col-check">Read</th>
-            <th class="col-order">#</th>
-            <th class="col-issues">Issues & Tie-Ins</th>
-            <th class="col-authors">Primary Author(s)</th>
-            <th class="col-arcs">Story Arcs & Milestones</th>
-            <th class="col-editions">Collected Editions (Tick Owned)</th>
-            <th class="col-links">Canonical Links</th>
+            <th class="col-issue">Issue &amp; Story Title</th>
+            <th class="col-arc">Story Arc</th>
+            <th class="col-authors">Author(s)</th>
+            <th class="col-editions">Collected Editions &amp; Links</th>
           </tr>
         </thead>
         <tbody id="table-body">
